@@ -84,7 +84,7 @@
       isCheckedOut: false
     };
 
-    for (let property in book) {
+    for (let property in book) { //Use 'book', not 'books', since this is the name of the object above. A simple typo like this will break your code and can be tough to find!
       console.log(`${property}: ${book[property]}`);
     }
 
