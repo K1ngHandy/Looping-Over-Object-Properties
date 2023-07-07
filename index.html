@@ -27,20 +27,22 @@
     /* 
     PROBLEM 2: Given the "fakeProfile" object above, write a function that uses a "for..in" loop and prints the three properties and their values side-by-side.
     */
-    for (let prop in fakeProfile) {
-      console.log(`${prop}: ${fakeProfile[prop]}`)
-    }
+    function properties() {
+      for (let prop in fakeProfile) {
+        console.log(`${prop}: ${fakeProfile[prop]}`)
+      }
+    } properties();
 
     /* 
    PROBLEM 3: Given the “fakeProfile” object above, write a function that uses a “for…in” loop and only prints the value of the name property in a sentence that reads: “Hello, my name is Julio Gonzales.”  Hint: you will need to include an if statement within the loop.
    */
-    for (let prop in fakeProfile) {
-      if (prop === 'name') {
-        console.log(`Hello, my name is ${fakeProfile[prop]}.`)
-      } else {
-        console.log("Not a name")
+    function name() {
+      for (let prop in fakeProfile) {
+        if (prop === 'name') {
+          console.log(`Hello, my name is ${fakeProfile[prop]}.`)
+        }
       }
-    }
+    } name();
 
     /* 
     PROBLEM 4: Declare a variable that holds an object with three properties: Red, Green, and Blue (or R,G,B).  Give each of these properties any number value from 0 to 255.  Write a function called getMyRGB() that loops through each property and prints the number values of each to the console.
@@ -61,7 +63,7 @@
     */
 
     for (i in fakeProfile) {
-      console.log(fakeProfile[i])
+      console.log(fakeProfile[i]) // removed ".i", replaced with "[i]"
     }
 
 
